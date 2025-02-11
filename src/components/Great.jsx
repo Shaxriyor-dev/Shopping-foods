@@ -62,7 +62,7 @@ function Great() {
             <div className="pt-7">
               <Box sx={{ "& button": { m: 1 } }}>
                 <div>
-                  <Button sx={{height : '63px' , width : '186px' , background : '#6C5FBC' , borderRadius : '15px' , display : 'flex' , alignItems : 'center' , gap :'10px'}} variant="contained" size="large">
+                  <Button  onClick={() => window.open("https://play.google.com/store/apps/details?id=com.ubercab.eats&hl=en", "_blank")} sx={{height : '63px' , width : '186px' , background : '#6C5FBC' , borderRadius : '15px' , display : 'flex' , alignItems : 'center' , gap :'10px'}} variant="contained" size="large">
                       Download <HiArrowSmallRight className="text-[23px]" />
                   </Button>
                 </div>

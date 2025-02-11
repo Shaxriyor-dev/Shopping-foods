@@ -11,9 +11,11 @@ import FavoriteBorder from "@mui/icons-material/FavoriteBorder";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Food from "../assets/food.png";
 import lop from '../assets/lop.png';
+import { useNavigate } from "react-router-dom";
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
 function Top() {
+  const navigate = useNavigate();
   return (
     <div>
       <div className="h-[100vh] flex items-center justify-center">
@@ -105,7 +107,7 @@ function Top() {
             </div>
           </div>
           <div className="flex justify-end items-center px-15">
-            <a
+            <a  onClick={() => navigate("/hammasi")}
               className="text-[20px] font-[poppins] flex items-center gap-3 text-[#ACADB9] "
               href="#"
             >
@@ -267,7 +269,7 @@ function Top() {
             </div>
           </div>
           <div className="flex justify-end items-center px-15">
-            <a
+            <a  onClick={() => navigate("/hammasi")}
               className="text-[20px] font-[poppins] flex items-center gap-3 text-[#ACADB9] "
               href="#"
             >

@@ -1,5 +1,4 @@
 import * as React from "react";
-
 import Logo from "../assets/Logo.png";
 import { Link } from "react-router-dom";
 
@@ -17,28 +16,38 @@ function Navbar() {
               eatly
             </a>
             <ul className="flex align-middle-center gap-16">
-              <Link className="text-[17.83px] text-[#606060] transition-all duration-200 hover:text-blue-500 hover:font-bold" to="/menu">
+              <Link
+                className="text-[17.83px] text-[#606060] transition-all duration-200 hover:text-blue-500 hover:font-bold"
+                to="/menu"
+              >
                 Menu
               </Link>
-              <Link className="text-[17.83px] text-[#606060] transition-all duration-200 hover:text-blue-500 hover:font-bold" to="/blog">
+              <Link
+                className="text-[17.83px] text-[#606060] transition-all duration-200 hover:text-blue-500 hover:font-bold"
+                to="/blog"
+              >
                 Blog
               </Link>
-              <Link className="text-[17.83px] text-[#606060] transition-all duration-200 hover:text-blue-500 hover:font-bold" to="/pricing">
+              <Link
+                className="text-[17.83px] text-[#606060] transition-all duration-200 hover:text-blue-500 hover:font-bold"
+                to="/pricing"
+              >
                 Pricing
               </Link>
-              <Link className="text-[17.83px] text-[#606060] transition-all duration-200 hover:text-blue-500 hover:font-bold" to="/contact">
+              <Link
+                className="text-[17.83px] text-[#606060] transition-all duration-200 hover:text-blue-500 hover:font-bold"
+                to="/contact"
+              >
                 Contact
               </Link>
             </ul>
           </div>
 
           <div className="flex items-center gap-15">
-            <a className="text-[17px] text-[#606060] font-[700]" href="#">
-              Login
-            </a>
-            <button className="bg-[#6C5FBC] h-15 w-37 rounded-2xl text-cyan-50 text-lg font-medium">
+            <Link className="text-[18px] text-[#606060] font-[700] font-[poppins]" to="/login">Login</Link>
+            <Link to="/sinup" className="bg-[#6C5FBC] h-15 w-37 rounded-2xl text-cyan-50 text-lg font-medium flex justify-center items-center">
               Sign up
-            </button>
+            </Link>
           </div>
         </div>
         <div className="flex justify-center items-center">

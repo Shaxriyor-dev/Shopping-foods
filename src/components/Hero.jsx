@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import Rating from "@mui/material/Rating";
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
@@ -6,8 +7,11 @@ import HeroImg from "../assets/Hero.png";
 import vector from '../assets/Vector.png';
 
 
+
 function Hero() {
+  const navigate = useNavigate();
   return (
+
     <>
         <header className="h-[100vh] flex  items-center justify-center">
           <div className="flex justify-center items-center gap-[60px]">
@@ -30,7 +34,7 @@ function Hero() {
               <div>
                 <Box sx={{ "& button": {}, marginTop: "70px" }}>
                   <div>
-                    <Button
+                    <Button onClick={() => navigate("/menu")}
                       className="font-[poppins]"
                       sx={{
                         width: "179px",
